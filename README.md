@@ -1,24 +1,20 @@
-# README
+Hello :)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pour le projet d'aujourd'hui, je t'invite à faire un petit: 'bundle install' dans ce dossier.
+Ensuite, il te faudra charger les migrations grâce à: 'rails db:migrate'.
+Un petit coup de: 'rails db:seed' et tu sera OP pour faire tes tests dans la console...
 
-Things you may want to cover:
+...qui s'ouvre avec: 'rails c' au cas où tu l'aurais oublié ! ;)
 
-* Ruby version
+______________________________________________________________________________
 
-* System dependencies
+Voici les commandes à taper pour vérifier que 100 docteurs, patients et RDV se soient bien créés dans 100 villes de façon aléatoire :
 
-* Configuration
+    > Doctor.all.count
+    
+    > Patient.all.count
+    
+    > Appointment.all.count
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    > City.all.count
+______________________________________________________________________________

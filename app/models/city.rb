@@ -1,7 +1,5 @@
-class Doctor < ApplicationRecord
-  belongs_to :city
+class City < ApplicationRecord
   has_many :appointments
   has_many :patients, through: :appointments
   has_many :cities, through: :appointments
-  has_many :specs, through: :appointments
 end
